@@ -4,12 +4,13 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 32 // 지원할 수 있는 가장 높은 API 버전. 최신 버전으로 해놔라. APK에 적용되는 SDK 버전
 
     defaultConfig {
         applicationId "com.example.fastcampuskotlin"
-        minSdk 21
-        targetSdk 32
+        minSdk 21 // 이 버전보다 이전에 나온 OS는 우리 앱을 못씀. 너무 낮으면 우리가 관리해야 하는 대상이 너무 많음.
+        // 너무 낮으면 우리가 쓸 수 없는 기능들이 많아짐.
+        targetSdk 32 // compileSDK와 맞추는게 좋음
         versionCode 1
         versionName "1.0"
 
@@ -18,8 +19,9 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled false // 앱 용량 축소를 위해 코드 축소, 리소스 축소 등. false / true 등 상관 없음.
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // 우리 APK 소스코드 못보게 난독화하는 규칙
         }
     }
     compileOptions {
@@ -36,6 +38,7 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

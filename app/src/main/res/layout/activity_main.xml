@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/explicit_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="명시적 인텐트1. componentName 그대로 입력" />
+
+    <TextView
+        android:id="@+id/explicit_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="명시적 인텐트2. apply 사용" />
+
+    <TextView
+        android:id="@+id/explicit_tv3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="명시적 인텐트3. 데이터" />
+
+    <TextView
+        android:id="@+id/explicit_tv4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="명시적 인텐트4. 결과 받기" />
+
+    <TextView
+        android:id="@+id/explicit_tv5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="명시적 인텐트5. 결과 받기 + ActivityResult" />
+
+    <TextView
+        android:id="@+id/explicit_tv6"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="명시적 인텐트5. Action" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
