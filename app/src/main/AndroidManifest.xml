@@ -4,6 +4,7 @@
     package="com.example.fastcampuskotlin">
 
     <application
+        android:name=".MasterApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,16 +15,45 @@
         android:theme="@style/Theme.FastCampusKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"> <!-- 다른 앱이 이 activity를 호출할 수 있다. MainActivity와 Launcher Activity는 반드시 true -->
+            android:name=".ResourceActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ApplicationActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationActivity1"
+            android:exported="true" />
+        <activity
+            android:name=".AsyncActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThreadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FragmentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityStack3"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityStack2"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityStack1"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"> <!-- 다른 앱이 이 activity를 호출할 수 있다. MainActivity와 Launcher Activity는 반드시 true -->
+
         </activity>
     </application>
 

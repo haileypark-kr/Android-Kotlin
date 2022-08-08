@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- tools:layout="@layout/fragment1" 는 안스가 우측 화면에 fragment 그릴 때 힌트를 주기 위해  -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:name="com.example.fastcampuskotlin.Fragment1"
+        tools:layout="@layout/fragment1" />
+
+
+    <TextView
+        android:id="@+id/tv_attach"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="attach"
+        android:gravity="center"
+        android:background="#FFDB00" />
+
+    <TextView
+        android:id="@+id/tv_detach"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="detach"
+        android:gravity="center"
+        android:background="#8BC34A" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearlayout_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- FragmentActivity에서 여기에 fragment1을 붙일 것임 -->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/tv_accessFragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Access fragment"
+        android:background="#03A9F4" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
